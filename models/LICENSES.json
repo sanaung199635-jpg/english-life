@@ -1,0 +1,27 @@
+{
+  "_说明": "3D 资产授权登记。每个资产必须写明来源、作者、许可证与修改内容；没有登记的资产不得进入场景。",
+  "assets": [
+    {
+      "files": ["characters/mia.glb", "characters/leo.glb", "characters/reader.glb"],
+      "source": "Quaternius · Universal Base Characters [Standard]",
+      "url": "https://quaternius.com/packs/universalbasecharacters.html",
+      "download": "https://quaternius.itch.io/universal-base-characters （免费标准版，2026-11-02 下载）",
+      "author": "Quaternius",
+      "license": "CC0 1.0 Universal (Public Domain Dedication)",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "placeholder": false,
+      "modifications": "由 scripts/blender/build_characters.py 加工：替换发型与眉毛、程序生成服装（衬衫/毛衣/长裤/围裙/鞋）、眼镜、眼睑与眨眼变形、张嘴变形、唇线贴图修改、贴图缩至 1024 并转 WebP、Meshopt 压缩"
+    },
+    {
+      "files": ["characters/animations.glb"],
+      "source": "Quaternius · Universal Animation Library [Standard]",
+      "url": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "download": "https://quaternius.itch.io/universal-animation-library （免费标准版，2026-11-02 下载）",
+      "author": "Quaternius",
+      "license": "CC0 1.0 Universal (Public Domain Dedication)",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "placeholder": false,
+      "modifications": "只保留 Idle_Loop、Idle_Talking_Loop、Sitting_Idle_Loop、Sitting_Talking_Loop 四段动画（scripts/blender/extract_animations.py），Meshopt 压缩"
+    }
+  ]
+}
